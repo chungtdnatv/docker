@@ -156,7 +156,7 @@ mkdir -p $SHARED_HOST_DIR
 IMAGE=$IMAGE_NAME:$TAG_PREFIX-$ROS_DISTRO$SUFFIX
 echo "Launching $IMAGE"
 
-docker run \
+sudo docker run \
     -it --rm \
     $VOLUMES \
     --env="XAUTHORITY=${XAUTH}" \
